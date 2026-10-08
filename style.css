@@ -1,0 +1,345 @@
+/*Description: style.css
+Author: Filicia Jing Xuan WONG
+Date: 10/09/2026
+Validation: 24/9/2026*/
+
+/*Webpage Styling*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#f7f1e7;
+    color: #3f3025;
+    line-height: 1.6;
+}
+
+/*Header*/
+.website_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #fffaf2;
+    border-bottom: 1px solid #d8c7b0;
+    position: sticky;
+    top: 0;
+    z-index: 1500;
+}
+
+/*Logo*/
+.powericon_logo_link {
+    display: block;
+}
+
+.powericon_logo {
+    width: 55px;
+    height: 55px;
+    display: block;
+}
+
+.powericon_logo_link:hover {
+    opacity: 0.80;
+}
+
+/*Navigation bar*/
+.top_nav {
+    display: flex;
+    gap: 30px;
+}
+
+.top_nav a {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+    padding: 8px 5px;
+    border-bottom: 3px solid transparent;
+}
+
+.top_nav a:hover {
+    color: #c46a32;
+    border-bottom: 3px solid #c46a32;
+}
+
+/*Current Page*/
+.top_nav a.active {
+    color: #c46a32;
+    border-bottom: 3px solid #c46a32;
+}
+
+/*Main Container*/
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 52px 0;
+}
+
+/*Home Page*/
+.section_container {
+    text-align: center;
+    padding: 40px 20px 50px;
+}
+
+.homepage_statement, .televisions_statement, .aboutus_statement {
+    color: #c46a32;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.section_container h1,
+.page_heading h1 {
+    color: #5a3e2b;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+
+.homepage_statement_intro, .televisions_statement_intro, .aboutus_statement_intro{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #66584d;
+}
+
+/*Information Cards*/
+.info_card_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info_card {
+    background-color: #fffaf2;
+    border: 1px solid #d8c7b0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(80, 60, 40, 0.08);
+}
+
+.info_card:hover {
+    transform: translateY(-3px);
+}
+
+.card_order {
+    color: #c46a32;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.info_card h2 {
+    color: #5a3e2b;
+    margin-top: 0;
+}
+
+.info_card p {
+    color: #66584d;
+}
+
+/*Television Page*/
+.page_heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page_heading h1 {
+    margin-bottom: 20px;
+}
+
+
+/*Question Cards*/
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.question_card {
+    background-color: #fffaf2;
+    border: 1px solid #d8c7b0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(80, 60, 40, 0.08);
+}
+
+.question_header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.question_order {
+    color: #c46a32;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 30px;
+}
+
+.question_header h2 {
+    margin: 0;
+    color: #5a3e2b;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+/*Chart Images*/
+.question_card img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto 25px;
+    border-radius: 8px;
+}
+
+/*Explanation*/
+.brief_explanation {
+    background-color: #f3eadc;
+    padding: 20px;
+    border-left: 4px solid #c46a32;
+    border-radius: 5px;
+}
+
+.brief_explanation strong {
+    color: #5a3e2b;
+}
+
+.brief_explanation p {
+    margin-bottom: 0;
+    color: #66584d;
+}
+
+/*About Us Page*/
+.about_card {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #fffaf2;
+    border: 1px solid #d8c7b0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 60, 40, 0.08);
+}
+
+.about_card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #5a3e2b;
+}
+
+.about_card p {
+    margin-bottom: 15px;
+    color: #66584d;
+}
+
+.about_card p:last-child {
+    margin-bottom: 0;
+}
+
+/*Footer*/
+.footer {
+    background-color: #5a3e2b;
+    color: #fffaf2;
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/*Web Responsiveness*/
+@media (max-width: 768px) {
+
+    .website_header {
+        padding: 15px 25px;
+    }
+
+    .top_nav {
+        gap: 15px;
+    }
+
+    .top_nav a {
+        font-size: 14px;
+    }
+
+    .section_container h1,
+    .page_heading h1 {
+        font-size: 32px;
+    }
+
+    .info_card_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .question_header h2 {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .website_header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top_nav {
+        gap: 12px;
+    }
+
+    .container {
+        width: 92%;
+        padding: 35px 0;
+    }
+
+    .question_card {
+        padding: 20px;
+    }
+}
+
+/*to make svg container responsive to changes in screen size and window width*/
+.responsive-svg-container {
+margin: 0 auto; /* center */
+width: 100%; /* fill parent width */
+max-width: 1200px; /* cap max width */
+}
+
+
+/*T05 Chart Styling*/
+/*Scatter Plot*/
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.chart-section {
+    background-color: #fffaf2;
+    border: 1px solid #d8c7b0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(80, 60, 40, 0.08);
+}
+
+.chart-section h2 {
+    margin-top: 0;
+    color: #5a3e2b;
+    font-size: 20px;
+}
+
+/*T05 Responsiveness*/
+@media (max-width: 900px) {
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+}
