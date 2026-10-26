@@ -2,47 +2,34 @@
 <html lang="en">
 <!--Description: index.html-->
 <!--Author: Filicia Jing Xuan WONG-->
-<!--Date: 10/09/2026-->
-<!--Validation: 24/9/2026-->
 
 <!--Head-->
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="T01 Website, Homepage">
-    <meta name="keywords" content="Data Visualisation, Tutorial1, T01, Homepage">
+    <meta name="description" content="T05 Website">
+    <meta name="keywords" content="Data Visualisation, T05">
     <meta name="authors" content="Filicia Jing Xuan WONG">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appliance Energy Consumption Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-page="home">
+<body>
     
     <header class="website_header">
-        
-        <!--PowerIcon Logo-->
-        <a class="powericon_logo_link" href="index.html" title="Return to Homepage">
-            <img src="images/PowerIcon.png" alt="PowerIcon" class="powericon_logo">
-        </a>
-
-        <!--Navigation Bar-->
-        <nav class="top_nav">
-            <a href="index.html" data-page="home">Home</a>
-            <a href="televisions.html" data-page="televisions">Televisions</a>
-            <a href="aboutus.html" data-page="aboutus">About Us</a>
-        </nav>
+        <h1>D3 Charts Dashboard</h1>
+        <p class="header_subtitle">TV Power Consumption</p>
     </header>
 
     <main class="container">
 
         <section class="page_heading">
-            <h1>Appliance Energy Consumption Visualisations</h1>
-
             <p class="homepage_statement_intro">
-                This dashboard explores Australian television energy consumption
-                using multiple D3 visualisations. The charts investigate energy
-                ratings, screen technologies, power consumption and electricity
-                price trends.
+                This dashboard explores television energy consumption and Australian
+                electricity price trends using four interactive data visualisations.
+                Compare energy-efficiency ratings with electricity consumption, examine
+                differences between screen technologies, and explore how average spot
+                electricity prices have changed over time.
             </p>
         </section>
         <div class="chart-grid">
@@ -50,24 +37,28 @@
             <!-- Scatter Plot -->
             <section class="chart-section">
                 <h2>Energy Consumption vs Star Rating</h2>
+                <p class="chart-description">Each point represents a listed television model. Compare its labelled annual energy use with its efficiency star rating; colours identify screen technology.</p>
                 <div id="scatter-chart"></div>
             </section>
 
             <!-- Donut Chart -->
             <section class="chart-section">
                 <h2>Energy Consumption by Screen Technology</h2>
+                <p class="chart-description">Mean annual energy consumption across all screen sizes. Slice size shows the relative mean for each technology.</p>
                 <div id="donut-chart"></div>
             </section>
 
             <!-- Bar Chart -->
             <section class="chart-section">
                 <h2>Energy Consumption of 55-inch TVs</h2>
+                <p class="chart-description">Compare the mean labelled annual energy consumption for LCD, LED, and OLED televisions in the 55-inch dataset.</p>
                 <div id="bar-chart"></div>
             </section>
 
             <!-- Line Chart -->
             <section class="chart-section">
                 <h2>Australian Spot Power Prices (1998–2024)</h2>
+                <p class="chart-description">The line tracks the supplied yearly average spot electricity price, excluding Tasmania and Snowy, in dollars per megawatt hour.</p>
                 <div id="line-chart"></div>
             </section>
 
@@ -80,7 +71,6 @@
         <p>&copy; 2026 Filicia Jing Xuan WONG | Built with assistance from GenAI for starter code/content</p>
     </footer>
 
-    <script src="script.js"></script>
      <!-- Load D3 first, then your D3 code file -->
 
     <!-- D3 library -->
@@ -90,7 +80,7 @@
     <script src="js/scatter.js"></script>
     <script src="js/donut.js"></script>
     <script src="js/bar.js"></script>
-    <script src="js/line.js"></script>
+    <script src="js/line.js"></script> 
 
 </body>
 </html>
